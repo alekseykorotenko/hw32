@@ -11,6 +11,8 @@
   justify-content: space-between;
   .header__heading {
     font-size: 3rem;
+    color: rgb(109, 109, 198);
+    cursor: pointer;
   }
   .header__logo {
     width: 0;
@@ -44,15 +46,10 @@
 .main__container {
   width: 1000px;
   margin: 0 auto;
-  // display: flex;
   border: 1px solid black;
   .main__block {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
     background-color: rgb(229, 184, 231);
-    // flex-grow: 2;
     .main__content {
       padding: 10px 0;
       display: none;
@@ -95,6 +92,13 @@
       }
     }
   }
+  .main__subblock {
+    background-color: rgb(188, 216, 223);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
   .main__subblock--spec {
     background-color: rgb(229, 184, 231);
     // border-left: 1px solid black;
@@ -104,6 +108,12 @@
     flex-direction: column;
     padding: 15px 30px;
     align-items: flex-start;
+  }
+  .footer__info {
+    font-size: 0.75rem;
+    color: grey;
+    padding-top: 50px;
+    padding-bottom: 10px;
   }
 }
 
