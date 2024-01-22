@@ -1,15 +1,35 @@
 @import 'reset';
 
-//header
+//Colors
+$addition-color: rgb(233, 213, 234);
+$secondary-color: rgb(188, 216, 223);
 
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+// shadow,
+.header__container,
+.main__container {
+  box-shadow: 10px 10px 10px rgb(223, 223, 223);
+}
+
+//body
+body {
+  font-family: 'Pangolin', cursive;
+}
+
+//header
 .header__container {
-  width: 1000px;
-  margin: 50px auto;
+  background-color: white;
+  width: 70%;
+  margin: 50px auto 0;
+  padding: 0 20px 50px 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   .header__heading {
+    padding: 0 20px;
     font-size: 3rem;
     color: rgb(109, 109, 198);
     cursor: pointer;
@@ -17,7 +37,7 @@
   .header__logo {
     width: 0;
     height: 0;
-    border: 50px solid rgb(188, 216, 223);
+    border: 50px solid $secondary-color;
 
     position: relative;
     z-index: 1;
@@ -25,7 +45,7 @@
       content: '';
       width: 0;
       height: 0;
-      border: 50px solid rgb(188, 216, 223);
+      border: 50px solid $secondary-color;
       position: absolute;
       transform: rotate(45deg);
       content: '';
@@ -44,12 +64,12 @@
 
 //main
 .main__container {
-  width: 1000px;
+  width: 70%;
   margin: 0 auto;
   border: 1px solid black;
   .main__block {
     display: flex;
-    background-color: rgb(229, 184, 231);
+    background-color: $addition-color;
     .main__content {
       padding: 10px 0;
       display: none;
@@ -60,7 +80,7 @@
     }
 
     .nav__list {
-      background-color: rgb(188, 216, 223);
+      background-color: $secondary-color;
       .nav__item {
         padding: 20px 50px 20px 10px;
         border-bottom: 1px solid black;
@@ -72,13 +92,13 @@
         cursor: pointer;
       }
       li:not(.active):hover {
-        background: rgb(227, 160, 230);
-        border-color: rgb(227, 160, 230);
+        background: rgb(236, 204, 238);
+        border-color: rgb(236, 204, 238);
       }
       .active {
-        background: rgb(229, 184, 231);
+        background: $addition-color;
         color: #000;
-        border-color: rgb(229, 184, 231);
+        border-color: $addition-color;
         border-right: 0;
       }
       .nav__item .active:after {
@@ -88,19 +108,23 @@
         left: 0;
         right: 0;
         height: 5px;
-        background: rgb(188, 216, 223);
+        background: $secondary-color;
       }
     }
   }
+
+  .main__text {
+    font-size: 1.5rem;
+  }
   .main__subblock {
-    background-color: rgb(188, 216, 223);
+    background-color: $secondary-color;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
   .main__subblock--spec {
-    background-color: rgb(229, 184, 231);
+    background-color: $addition-color;
     // border-left: 1px solid black;
     width: 100%;
 
@@ -117,4 +141,43 @@
   }
 }
 
-//ul li
+.elem {
+  position: absolute;
+  top: 160px;
+  right: 13%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: $secondary-color;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -35px;
+    left: 13px;
+    width: 69px;
+    height: 69px;
+    border-bottom: 1px solid black;
+    transform: rotate(45deg);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 14px;
+    width: 69px;
+    height: 69px;
+    border-bottom: 1px solid black;
+    transform: rotate(135deg);
+  }
+  .elem__square {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    background-color: $secondary-color;
+    position: relative;
+    z-index: 999;
+    left: 4px;
+    top: 4px;
+  }
+  // &::after
+}
