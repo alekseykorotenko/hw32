@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final work</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__block">
+          <div class="header__logo">
+            <p class="logo_text">logo</p>
+          </div>
+        </div>
+        <div class="header__block">
+          <h1 class="header__heading">Frontend test, second level</h1>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="main__container">
+        <div class="main__block">
+          <!-- TODO -->
+          <!-- Need to add information about copiright -->
+          <ul class="nav__list">
+            <li class="nav__item active" id="item_number">Number</li>
+            <li class="nav__item" id="item_string">String</li>
+            <li class="nav__item" id="item_boolean">Boolean</li>
+            <li class="nav__item" id="item_null">null</li>
+            <li class="nav__item" id="item_undefined">undefined</li>
+            <li class="nav__item" id="item_object">Object</li>
+            <li class="nav__item" id="item_symbols">Symbols</li>
+          </ul>
+          <div class="main__subblock main__subblock--spec">
+            <div class="main__content active">
+              <p class="main__text" id="number_type">
+                Тип number представляє і цілі числа, і числа з рухомою точкою. <br />
+                Є багато операцій, що можна робити з числами, наприклад, множення *, ділення /,
+                додавання +, віднімання - тощо. Окрім звичайних чисел, є так звані “спеціальні
+                числові значення”, що також мають відношення до цього типу даних: Infinity,
+                -Infinity і NaN.
+              </p>
+            </div>
+            <div class="main__content">
+              <p class="main__text" id="string_type">
+                Рядок у JavaScript має бути оточений лапками.<br />
+                У JavaScript є три типи лапок.
+                <br />
+                Подвійні лапки: "Привіт". <br />
+                Одинарні лапки: 'Привіт'.<br />
+                Зворотні лапки: `Привіт`.
+              </p>
+            </div>
+            <div class="main__content">
+              <p class="main__text" id="boolean_type">
+                Логічний тип може приймати лише два значення: true (істина) та false (хиба).<br />
+
+                Цей тип зазвичай використовується для зберігання значень так/ні: true означає “так,
+                вірно”, а false означає “ні, не вірно”.
+              </p>
+            </div>
+            <div class="main__content">
+              <p class="main__text" id="null_type">
+                Спеціальне значення null не належить до жодного з описаних вище типів.
+                <br />
+                Воно формує окремий власний тип, який містить лише значення null
+              </p>
+            </div>
+            <div class="main__content">
+              <p class="main__text" id="undefined_type">
+                Спеціальне значення undefined також стоїть окремо. Воно представляє власний тип,
+                подібний до “null”.
+                <br />
+                undefined означає, що “значення не присвоєно”.
+              </p>
+            </div>
+            <div class="main__content">
+              <p class="main__text" id="object_type">
+                Тип object є особливим типом.<br />
+
+                Усі інші типи називаються “примітивами”, тому що їхні значення можуть містити тільки
+                один елемент (це може бути рядок, число, або будь-що інше). В об’єктах же
+                зберігаються колекції даних і більш складні структури.
+              </p>
+            </div>
+            <div class="main__content">
+              <p class="main__text" id="symbols_type">
+                Тип symbol використовується для створення унікальних ідентифікаторів в об’єктах. Ми
+                згадали цей тип для повноти, проте докладніше вивчимо його після об’єктів.
+              </p>
+            </div>
+          </div>
+
+          <!-- <p class="footer__info">©2024</p> -->
+        </div>
+        <!-- <div class="main__block main__block--spec"></div> -->
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/animation.js"></script>
+  </body>
+</html>
